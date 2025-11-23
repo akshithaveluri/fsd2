@@ -1,0 +1,15 @@
+import React from 'react';
+
+function Child({ message }) {
+  return <h3>Message from Parent: {message}</h3>;
+}
+
+export default function Parent() {
+  const msg = "Hello from Parent Component!";
+  return (
+    <div>
+      <h2>Parent Component</h2>
+      <Child message={msg} />
+    </div>
+  );
+}
