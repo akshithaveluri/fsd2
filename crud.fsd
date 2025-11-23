@@ -1,0 +1,14 @@
+// Insert
+db.students.insert({ name: "Akshitha", age: 20 });
+
+// Find
+db.students.find();
+
+// Update
+db.students.update(
+  { name: "Akshitha" },
+  { $set: { age: 21 } }
+);
+
+// Delete
+db.students.remove({ name: "Akshitha" });
