@@ -1,0 +1,11 @@
+import React from 'react';
+
+export default function Greeting() {
+  const name = "Akshitha";
+  return (
+    <div>
+      <h2>Hello, {name}!</h2>
+      <p>Welcome to JSX Markup Example.</p>
+    </div>
+  );
+}
