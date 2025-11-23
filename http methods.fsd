@@ -1,0 +1,21 @@
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+let users = [];
+
+app.post('/users', (req, res) => {
+  users.push(req.body);
+  res.send('User added');
+});
+
+app.get('/users', (req, res) => {
+  res.json(users);
+});
+
+app.delete('/users/:name', (req, res) => {
+  users = users.filter(u => u.name !== req.params.name);
+  res.send('User deleted');
+});
+
+app.listen(3000, () => console.log('Running...'));
