@@ -1,0 +1,10 @@
+import React from 'react';
+
+export default function NameList() {
+  const names = ['Akshitha', 'Divya', 'Sneha'];
+  return (
+    <ul>
+      {names.map((n, index) => <li key={index}>{n}</li>)}
+    </ul>
+  );
+}
