@@ -1,0 +1,18 @@
+import React from 'react';
+
+function Greeting() {
+  return <p>Have a great day!</p>;
+}
+
+class Welcome extends React.Component {
+  render() {
+    return (
+      <div>
+        <h2>Welcome to React Components</h2>
+        <Greeting />
+      </div>
+    );
+  }
+}
+
+export default Welcome;
