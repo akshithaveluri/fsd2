@@ -1,0 +1,10 @@
+import React, { useState } from 'react';
+
+export default function LoginStatus() {
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  return (
+    <div>
+      {isLoggedIn ? <h3>Welcome, User!</h3> : <h3>Please Log In</h3>}
+    </div>
+  );
+}
