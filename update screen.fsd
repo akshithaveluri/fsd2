@@ -1,0 +1,11 @@
+import React, { useState } from 'react';
+
+export default function UpdateScreen() {
+  const [text, setText] = useState("Initial Text");
+  return (
+    <div>
+      <h3>{text}</h3>
+      <button onClick={() => setText("Screen Updated!")}>Update</button>
+    </div>
+  );
+}
