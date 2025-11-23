@@ -1,0 +1,17 @@
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Welcome to ExpressJS Routing Example!');
+});
+
+app.get('/user/:name', (req, res) => {
+  res.send(`Hello ${req.params.name}, this is a route parameter example.`);
+});
+
+app.get('/search', (req, res) => {
+  const query = req.query.q;
+  res.send(`You searched for: ${query}`);
+});
+
+app.listen(3000, () => console.log('Server running on http://localhost:3000'));
