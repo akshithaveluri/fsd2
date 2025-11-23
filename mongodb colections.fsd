@@ -1,0 +1,11 @@
+// Create DB
+use mydb;
+
+// Create Collection
+db.createCollection("students");
+
+// Drop Collection
+db.students.drop();
+
+// Drop DB
+db.dropDatabase();
