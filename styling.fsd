@@ -1,0 +1,19 @@
+import React from 'react';
+import './App.css';
+
+export default function StyledComponent() {
+  return (
+    <div className="card">
+      <h2>React Styling Example</h2>
+      <p>This is styled using CSS.</p>
+    </div>
+  );
+}
+
+
+
+.card {
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+}
