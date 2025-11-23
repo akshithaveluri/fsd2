@@ -1,0 +1,16 @@
+// find
+db.emp.find();
+
+// limit
+db.emp.find().limit(2);
+
+// sort
+db.emp.find().sort({ age: 1 });
+
+// createIndex
+db.emp.createIndex({ name: 1 });
+
+// aggregate
+db.emp.aggregate([
+  { $group: { _id: "$dept", total: { $sum: 1 } } }
+]);
